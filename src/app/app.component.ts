@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'my-recipes';
+
+  selectedSection = 'recipes';
+
+  showSection(section:string){
+    this.selectedSection = section;
+  }
+
 }
